@@ -279,7 +279,7 @@ class _CreditCardWidgetState extends State<CreditCardWidget>
               padding: const EdgeInsets.only(left: 16),
               child: Text(
                 widget.cardNumber.isEmpty || widget.cardNumber == null
-                    ? 'XXXX XXXX XXXX XXXX'
+                    ? 'XXXXXXXXXXXXXXXX'
                     : widget.cardNumber,
                 style: widget.textStyle ?? defaultTextStyle,
               ),
@@ -291,7 +291,7 @@ class _CreditCardWidgetState extends State<CreditCardWidget>
               padding: const EdgeInsets.only(left: 16),
               child: Text(
                 widget.expiryDate.isEmpty || widget.expiryDate == null
-                    ? 'MM/YY'
+                    ? 'XXXXXXXXXXXXXXXX'
                     : widget.expiryDate,
                 style: widget.textStyle ?? defaultTextStyle,
               ),
@@ -302,7 +302,7 @@ class _CreditCardWidgetState extends State<CreditCardWidget>
               padding: const EdgeInsets.only(left: 16, right: 16, bottom: 16),
               child: Text(
                 widget.cardHolderName.isEmpty || widget.cardHolderName == null
-                    ? 'CARD HOLDER'
+                    ? 'ACCOUNT HOLDER'
                     : widget.cardHolderName,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
